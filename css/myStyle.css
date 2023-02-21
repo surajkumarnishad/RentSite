@@ -1,0 +1,242 @@
+
+:root{
+    --bgdcolor:#598392;
+    --bglcolor:#aec3b0;
+    --fdcolor:#01161e;
+    --flcolor:#eff6e0;
+    --mycolor:#124559;
+    
+    }
+*{
+    margin: 0px auto;
+    padding: 0px;
+    font-family: arial;
+    
+}
+a{
+    color:white !important;
+    text-decoration: none !important;
+}
+ul{
+    list-style: none;
+}
+body{
+    background-color: var(--bglcolor);
+}
+header{
+    z-index: 5;
+    position: sticky;
+    top:0px;
+    min-height: 40px;
+    background-color: var(--mycolor);
+    display: flex;
+    align-items:center;
+    color:var(--flcolor);
+
+}
+header>div{
+/*    border:1px solid red;*/
+    flex: 1;
+    margin: 0 10px;
+
+}
+header>div:nth-child(2){
+    flex:2;
+/*    border:1px solid red;*/
+    position: relative;
+    border-radius: 10px;
+    margin: 5px auto;
+    
+}
+header>div:nth-child(2):hover{
+box-shadow: 0px 0px 15px 5px white;
+}
+header>div:nth-child(2)::after{
+content: "\1F50D";
+font-size: calc(.8rem + .5vw);
+text-align: center;
+line-height: 45px;
+position: absolute;
+height: 45px;
+width: 45px;
+border-radius:0 10px 10px 0;
+background-color: #303841;
+top:0px;
+right: 0px;
+cursor: pointer;
+
+}
+header>div input[type="search"]{
+    border-radius: 10px;
+    width:100%;
+    height: 45px;
+    padding: 10px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+
+nav>ul{
+    min-height: 40px;
+    background-color: var(--bgdcolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav>ul>li{
+    margin: 0 5px;
+}
+nav>ul li a:hover{
+    background-color: var(--bglcolor);
+    color: var(--fdcolor);
+    
+}
+nav>ul>li a{
+    color:var(--flcolor);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius:5px;
+}
+nav>ul>li ul{
+    display:none;
+    position: absolute;
+    background-color: var(--bgdcolor);
+    margin-top:2px;
+    z-index: 1;
+}
+nav li:hover >ul{
+    display:block;  
+}
+.carousel-item img{
+    height: 36vw;
+}
+.container{
+    margin:20px auto;
+}
+.procard{
+    font-size: calc(0.6rem + 0.5vw);
+    min-height: 300px;
+    background-color:var(--flcolor);
+    width: 220px;
+    border:1px solid white;
+    padding:5px;
+    border-radius:10px;
+    margin:10px auto;
+    border:1px solid var(--bgdcolor);
+}
+.procard:hover{
+    transform: scale(1.1);
+    transition:.5s;
+}
+.procard img{
+    width: 100%;
+    height: 12em;
+}
+.procard section{
+    display: flex;
+}
+.procard section div:last-child{
+    border:1px solid var(--bgdcolor);
+    background: linear-gradient(#aec3b0,#01161e);
+    padding: 5px;
+    border-radius:5px;
+    color:white;
+}
+.procard section div:last-child:hover{
+ background: linear-gradient(#01161e,#aec3b0);
+ cursor: pointer;
+}
+#viewsection{
+    min-height: 400px;
+    display: flex;
+    font-size: calc(0.6rem + 0.5vw);
+}
+#imgsection{
+/*    border:1px solid red;*/
+    margin-right: 15px;
+    padding: 5px;
+    display: flex;
+    width:40em;
+    height: 20em;
+    position: sticky;
+    top:50px;
+}
+#imgsection>img{
+    height: 100%;
+    width:80%;
+
+}
+#imgsection>div>img{
+    height:2.5em;
+    width: 2.5em;
+    border:1px solid white;
+    margin-top:10px;
+    display: block;
+    cursor: pointer;
+}
+#detailsection{
+/*    border:1px solid red;*/
+    margin-right: 15px;
+    padding: 5px;
+    width:50em;
+    min-height: 20em;
+}
+#detailsection>span{
+    border:.5px solid var(--bgdcolor);
+    padding: 10px 5px;
+    border-radius:5px;
+    margin: 10px;
+}
+#detailsection>button{
+    margin: 10px;
+}
+footer{
+    font-size: calc(0.6rem + 0.5vw);
+    min-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.5em;
+    background-color: var(--mycolor);
+}
+footer>div{
+    margin: 10px auto;
+     border:.5px solid white;
+}
+
+footer .footercard1{
+    width: 20em;
+    padding: 5px;
+}
+footer .footercard2{
+    width: 16em;
+    padding: 5px;
+}
+footer h3{
+    font-size: calc(1rem + 0.5vw);
+    text-decoration: underline;
+    color: var(--flcolor);
+    line-height: 30px;
+}
+footer li{
+    list-style: none;
+}
+footer li::before{
+    content: "\1f449";
+    margin-right: 6px;  
+}
+
+footer a{
+    color:var(--flcolor);
+    text-decoration: none;
+    line-height: 30px;
+}
+#developer{
+ height: 50px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #303841;
+ border-bottom:5px solid white;
+ margin-bottom: 5px;
+ color:white;
+}
